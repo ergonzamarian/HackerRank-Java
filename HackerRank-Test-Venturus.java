@@ -11,7 +11,6 @@ import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
 
-
 class Result {
 
     /*
@@ -279,7 +278,7 @@ public class Solution {
 
         String pedido = bufferedReader.readLine();
 
-        String result = Result.ingredientes(pedido);
+        String result = Result.ingredientes(pedido.toLowerCase());
 
         bufferedWriter.write(result);
         bufferedWriter.newLine();
